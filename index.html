@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Enter into the world of music</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section id="nav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black">
+            <div class="logo"><img src="images/logo.png" alt="spotify"><span>Spotify</span></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item home">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item about">
+                        <a href="#about">About</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 search">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="input">
+                    <img src="images/search.png" alt="search" id="search">
+                </form>
+            </div>
+        </nav>
+    </section>
+    <!-- Top section -->
+    <section id="top">
+        <div class="container">
+            <div class="songList">
+                <div class="songItemContainer">
+                    <div class="songItem">
+                        <img src="covers/cover1.jpeg" alt="">
+                        <span>Night Changes</span>
+                        <span class="songlistplay"><span class="timestamp">3:46<i id="0"
+                                    class="fa songItemPlay fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/cover2.jpg" alt="">
+                        <span>Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">3:26<i id="1"
+                                    class="fa songItemPlay fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/cover3.jpeg" alt="">
+                        <span>Love Story</span>
+                        <span class="songlistplay"><span class="timestamp">3:55<i id="2"
+                                    class="fa songItemPlay fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/cover4.jpeg" alt="">
+                        <span>At My Worst</span>
+                        <span class="songlistplay"><span class="timestamp">2:50<i id="3"
+                                    class="fa songItemPlay fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/cover5.jpeg" alt="">
+                        <span>Perfect</span>
+                        <span class="songlistplay"><span class="timestamp">4:23<i id="4"
+                                    class="fa songItemPlay fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/cover6.jpeg" alt="">
+                        <span>Play Date</span>
+                        <span class="songlistplay"><span class="timestamp">3:00<i id="5"
+                                    class="fa songItemPlay fa-play-circle"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="covers/cover7.jpeg" alt="">
+                        <span>Until I Found You</span>
+                        <span class="songlistplay"><span class="timestamp">2:57<i id="6"
+                                    class="fa songItemPlay fa-play-circle"></i></span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+    </section>
+    <!-- Middle section -->
+    <section id="middle">
+        <div class="bottom">
+            <input type="range" name="range" value="0" id="myProgressBar" min="0" max="100">
+            <div class="icons">
+                <i class="fa-solid fa-2x fa-backward-step" id="previous"></i>
+                <i class="fa-regular fa-2x fa-play-circle" id="masterPlay"></i>
+                <i class="fa-solid fa-2x fa-forward-step" id="next"></i>
+            </div>
+            <div class="songInfo">
+                <img id="gif" src="images/playing.gif" width="42px" alt="gif"><span id="masterSongName">Night Changes -
+                    One
+                    Direction</span>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <section class="row" id="footer">
+        <div class="col-md-5 col-sm-6" id="about">
+            <h1>About Us</h1>
+            <p>With Spotify, it’s easy to find the right music or podcast for every moment – on your phone, your
+                computer,
+                your tablet and more.
+                <br>
+                There are millions of tracks and episodes on Spotify. So whether you’re behind the wheel, working out,
+                partying or relaxing, the right music or podcast is always at your fingertips. Choose what you want to
+                listen to, or let Spotify surprise you.
+                <br>
+                Tune in to a world of melodies, rhythms, and beats with Spotify.
+            </p>
+        </div>
+        <div class="col-md-3 col-sm-6" id="communities">
+            <h1>Communities</h1>
+            <ul>
+                <li>For Artists</li>
+                <li>Developers</li>
+                <li>Advertising</li>
+                <li>Investors</li>
+                <li>Vendors</li>
+                <li>Spotify for Work</li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-6" id="contact">
+            <h1>Contact Us</h1>
+            <p><i class="icon fa-solid fa-paper-plane"></i>office@spotify.com<br>
+                <a class="contact-link" href="https://www.facebook.com/Spotify" target="_blank"><i
+                        class="social-icon fa-brands fa-facebook"></i></a>
+                <a class="contact-link" href="https://www.instagram.com/spotify" target="_blank"><i
+                        class="social-icon fa-brands fa-instagram"></i></a>
+                <a class="contact-link" href="https://www.twitter.com/spotify"><i
+                        class="social-icon fa-brands fa-twitter"></i></a>
+                <!-- <a class="contact-link" href="https://www.linkedin.com/in/ayushi-agarwal-11a908229/" target="_blank"><i
+                    class="social-icon fa-bran
+                    ds fa-linkedin"></i></a></p> -->
+        </div>
+    </section>
+    <!-- Copyright section -->
+    <section id="copyright">
+        <p>© Spotify 2023</p>
+    </section>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/2ac67f81d1.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!--BOOTSTAP-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
